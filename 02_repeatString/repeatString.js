@@ -2,13 +2,21 @@ const repeatString = function(string, num) {
 
     let rString = "";
 
-    if (num>=0) {
-        for (let i = 0; i < num; i++) {
-            rString += string               
-        }     
-    } else {
-        return 'ERROR'
+    if (num <0) {
+        return 'ERROR'        
     }
+
+    for (let i = 0; i < num; i++) {
+        rString += string;        
+    }
+
+    // if (num>=0) {
+    //     for (let i = 0; i < num; i++) {
+    //         rString += string               
+    //     }     
+    // } else {
+    //     return 'ERROR'
+    // }
 
     return rString  
 };
