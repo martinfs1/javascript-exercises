@@ -1,16 +1,16 @@
-const removeFromArray = function(numbers, num) {
-
-    let newNumbers = [];
+const removeFromArray = function(numbers, ...num1) {    
 
     for (let i = 0; i < numbers.length; i++) {
+        num1.forEach((n) => {
+            if (numbers.includes(n) && n === numbers[i]) {
+                numbers.splice(numbers.indexOf(n),num1.length);
+            }
+        })
+        
+    }   
 
-        if (numbers[i] !== num) {
-            newNumbers.push(numbers[i])
-        }        
-
-    }
-    return newNumbers;    
-
+    return numbers;
+    
 };
 
 // Do not edit below this line
