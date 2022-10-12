@@ -8,15 +8,7 @@ const repeatString = function(string, num) {
 
     for (let i = 0; i < num; i++) {
         rString += string;        
-    }
-
-    // if (num>=0) {
-    //     for (let i = 0; i < num; i++) {
-    //         rString += string               
-    //     }     
-    // } else {
-    //     return 'ERROR'
-    // }
+    }   
 
     return rString  
 };
